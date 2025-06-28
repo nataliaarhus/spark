@@ -1,5 +1,3 @@
-package mypkg
-
 import org.apache.spark._
 import org.apache.log4j._
 
