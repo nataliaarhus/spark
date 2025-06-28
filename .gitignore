@@ -11,8 +11,7 @@
 /out/
 
 # SBT/Scala build artifacts
-/target/
-/project/target/
+**/target/
 
 # SBT state and logs
 /.history
