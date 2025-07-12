@@ -74,7 +74,7 @@ Examples:
 
 ## Spark SQL
 
-**Spark SQL** is a more modern and useful A{O built on top of RDDs.
+**Spark SQL** is a more modern and useful API built on top of RDDs.
 
 To use Spark SQL in Scala, a SparkSession needs to be created (instead of a SparkContext in case of RDDs). SparkContext can be taken from the session and used to pass SQL queries on Datasets. The session should be stopped when processing is completed.
 
