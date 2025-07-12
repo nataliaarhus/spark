@@ -20,6 +20,7 @@ Based on the material by Frank Kane, Sundog Education.
 - `scr/` - Source code directory.
   - `main/` - the main application source code.
   - `scala-refresher/` -  Scala refresher scripts or exercises.
+- `target/` - Build output directory generated locally by SBT, containing compiled classes, intermediate files, and logs. Excluded from the remote by .gitignore.
 
 ### Setting up local environment
 1. Verify that IntelliJ and Java 11 are installed.
@@ -32,7 +33,7 @@ Based on the material by Frank Kane, Sundog Education.
 
 **Spark** is a fast and general engine for large data processing. It parallelizes processing and is highly scalable.
 
-It is faster than map reduce (Hadoop) due to the DAG engine (directed acyclic graph). It optimizes the workflow and is memory-based.
+It is faster than map reduce (Hadoop) due to the **DAG engine** (directed acyclic graph). It optimizes the workflow and is memory-based.
 
 ### Spark architecture
 
@@ -40,7 +41,7 @@ It is faster than map reduce (Hadoop) due to the DAG engine (directed acyclic gr
 
 Spark can be written in Python, Java, and Scala.
 
-Benefits of using Scala:
+**Benefits of using Scala:**
 - Spark itself is written in Scala.
 - Scala's functional programming model is a good fit for distributed processing.
 - It gives fast performance (Scala compiles to Java bytecode).
