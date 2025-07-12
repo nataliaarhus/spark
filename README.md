@@ -9,7 +9,7 @@ Based on the material by Frank Kane, Sundog Education.
 ├── build.sbt
 ├── project
 ├── res
-├── scr
+├── src
 └── target
 ```
 
