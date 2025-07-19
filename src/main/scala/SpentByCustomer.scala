@@ -1,5 +1,5 @@
-import org.apache.spark._
 import org.apache.log4j._
+import org.apache.spark._
 object SpentByCustomer {
 
   def parseLine(line: String): (Int, Float) = {
