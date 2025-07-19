@@ -27,7 +27,7 @@ Based on the material by Frank Kane, Sundog Education.
 2. Configure the project SDK in IntelliJ to use jdk-11.
 3. Install the Scala plugin for IntelliJ.
 2. Validate the `build.sbt`.
-3. Mark `scr/main` as root directory.
+3. Mark `src/main/resources` as resources root.
 
 # About Spark
 
@@ -66,11 +66,11 @@ Spark can be written in Python, Java, and Scala.
 Before creating an RDD, a Spark context must be created, which is done by the driver program. The Spark shell creates the .sc object. Then, data can be loaded to create an RDD.
 
 Examples:
-- [FriendsByAge](https://github.com/nataliaarhus/spark/blob/main/src/main/FriendsByAge.scala)
-- [MinTemperatures](https://github.com/nataliaarhus/spark/blob/main/src/main/MinTemperatures.scala)
-- [RatingsCounter](https://github.com/nataliaarhus/spark/blob/main/src/main/RatingsCounter.scala)
-- [SpentByCustomer](https://github.com/nataliaarhus/spark/blob/main/src/main/SpentByCustomer.scala)
-- [WordCount](https://github.com/nataliaarhus/spark/blob/main/src/main/WordCount.scala)
+- [FriendsByAge](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/FriendsByAge.scala)
+- [MinTemperatures](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/MinTemperatures.scala)
+- [RatingsCounter](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/RatingsCounter.scala)
+- [SpentByCustomer](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/SpentByCustomer.scala)
+- [WordCount](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/WordCount.scala)
 
 ## Spark SQL
 
@@ -96,15 +96,34 @@ To use Spark SQL in Scala, a SparkSession needs to be created (instead of a Spar
 **Broadcast variables** - allows to create an object (eg. a map) and forward it to every executor on the cluster which can be used as needed. 
 
 Examples:
-- [FriendsByAgeDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/FriendsByAgeDataset.scala)
-- [MinTemperaturesDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/MinTemperaturesDataset.scala)
-- [MostPopularSuperheroDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/MostPopularSuperheroDataset.scala)
-- [PopularMoviesDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/PopularMoviesDataset.scala)
-- [PopularMoviesBroadcast](https://github.com/nataliaarhus/spark/blob/main/src/main/PopularMoviesBroadcast.scala)
-- [WordCountDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/WordCountDataset.scala)
+- [FriendsByAgeDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/FriendsByAgeDataset.scala)
+- [MinTemperaturesDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/MinTemperaturesDataset.scala)
+- [MostPopularSuperheroDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/MostPopularSuperheroDataset.scala)
+- [PopularMoviesDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/PopularMoviesDataset.scala)
+- [PopularMoviesBroadcast](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/PopularMoviesBroadcast.scala)
+- [WordCountDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/WordCountDataset.scala)
 
 
 ## Spark ML
+
+**Spark ML** is an API that allows for distribute processing of massive datasets and applying sophisticated learning algorithms at massive scale.
+It uses dataframes and datasets, unlike the deprecated MLLib API, which used RDDs.
+
+Some of the capabilities of Spark ML library:
+- Feature extraction
+- Basic statistics
+- Linear regression, logistic regression
+- Support Vector Machines
+- Naïve Bayes classifier
+- Decision trees
+- K-Means clustering
+- Principal component analysis (PCA), singular value decomposition (SVD)
+- Recommendations using Alternating Least Squares (ALS)
+
+Examples:
+- [MovieRecommendationsALSDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/MovieRecommendationsALSDataset.scala)
+- [LinearRegressionDataframeDataset](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/LinearRegressionDataframeDataset.scala)
+- [RealEstate](https://github.com/nataliaarhus/spark/blob/main/src/main/scala/RealEstate.scala)
 
 ## Spark Streaming
 
