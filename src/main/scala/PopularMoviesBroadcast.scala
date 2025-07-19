@@ -2,6 +2,7 @@ import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.{col, udf}
 import org.apache.spark.sql.types.{IntegerType, LongType, StructType}
+
 import scala.io.{Codec, Source}
 
 object PopularMoviesBroadcast {

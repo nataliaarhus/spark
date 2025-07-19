@@ -1,5 +1,6 @@
-import org.apache.spark._
 import org.apache.log4j._
+import org.apache.spark._
+
 import scala.math.min
 object MinTemperatures {
 

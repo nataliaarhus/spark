@@ -17,8 +17,8 @@ Based on the material by Frank Kane, Sundog Education.
 - `project/` - Contains SBT project configuration files and subfolders used for managing the build process.
   - build.properties - defines the SBT version to use for building the project.
 - `res/` - A resource directory containing data sources used as input for Spark jobs and exercises. Available at: https://www.sundog-education.com/sparkscala/
-- `scr/` - Source code directory.
-  - `main/` - the main application source code.
+- `src/` - Source code directory.
+  - `main/scala/` - the main application source code.
   - `scala-refresher/` -  Scala refresher scripts or exercises.
 - `target/` - Build output directory generated locally by SBT, containing compiled classes, intermediate files, and logs. Excluded from the remote by .gitignore.
 
